@@ -1,0 +1,15 @@
+{
+  "name": "DevWiseAI",
+  "short_name": "DevWiseAI",
+  "icons": [
+    {
+      "src": "/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#12151a",
+  "background_color": "#f7f7f4",
+  "display": "standalone",
+  "start_url": "/"
+}
