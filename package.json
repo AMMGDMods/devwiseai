@@ -1,0 +1,19 @@
+{
+  "name": "devwiseai",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.14.0",
+    "@astrojs/rss": "^4.0.12",
+    "@astrojs/sitemap": "^3.6.0"
+  },
+  "engines": {
+    "node": ">=20.3.0"
+  }
+}

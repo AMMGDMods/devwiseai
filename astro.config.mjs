@@ -1,0 +1,17 @@
+// @ts-check
+import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
+import { SITE_URL } from './src/consts.ts';
+
+// https://astro.build/config
+export default defineConfig({
+  site: SITE_URL,
+  trailingSlash: 'ignore',
+  integrations: [sitemap()],
+  markdown: {
+    shikiConfig: {
+      themes: { light: 'github-light', dark: 'github-dark' },
+      wrap: true,
+    },
+  },
+});

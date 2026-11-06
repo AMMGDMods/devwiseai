@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getPosts, slugifyTag } from '../../lib/posts';
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  const tags = [...new Set(posts.flatMap((p) => p.data.tags))];
+  return tags.map((tag) => ({
+    params: { tag: slugifyTag(tag) },
+    props: { tag, posts: posts.filter((p) => p.data.tags.includes(tag)) },
+  }));
+}
+const { tag, posts } = Astro.props;
+---
+<BaseLayout title={`Articles tagged “${tag}”`} description={`DevWiseAI articles tagged ${tag}.`} path={`/tags/${slugifyTag(tag)}/`}>
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Tag</span>
+      <h1>#{tag}</h1>
+      <p>{posts.length} article{posts.length === 1 ? '' : 's'} with this tag. <a href="/blog/">See all articles</a>.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="post-grid three">{posts.map((post) => <PostCard post={post} />)}</div>
+    </div>
+  </section>
+</BaseLayout>

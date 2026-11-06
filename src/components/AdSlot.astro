@@ -1,0 +1,21 @@
+---
+/**
+ * AD SLOT PLACEHOLDER
+ * -------------------
+ * Renders nothing today. Once Google AdSense approves the site:
+ *   1. Uncomment the AdSense loader script in src/layouts/BaseLayout.astro
+ *      and put the real publisher ID (ca-pub-XXXXXXXXXXXXXXXX) there.
+ *   2. Replace the comment below with the <ins class="adsbygoogle"> unit
+ *      code AdSense gives you for this slot, and set ADS_ENABLED to true.
+ * Never put a made-up publisher ID here.
+ */
+interface Props { name: string }
+const { name } = Astro.props;
+const ADS_ENABLED = false;
+---
+{ADS_ENABLED && (
+  <aside class="ad-slot" data-ad-slot-name={name} aria-label="Advertisement">
+    {/* <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script is:inline>(adsbygoogle = window.adsbygoogle || []).push({});</script> */}
+  </aside>
+)}

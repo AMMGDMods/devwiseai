@@ -1,0 +1,32 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { CONTACT_EMAIL } from '../consts';
+---
+<PageLayout title="Terms of Use" eyebrow="Legal" updated="November 6, 2026" path="/terms/" description="The terms that apply when you use the DevWiseAI website and its content.">
+  <p>These Terms of Use govern your use of the DevWiseAI website. By accessing the site, you agree to these terms. If you do not agree, please do not use the site.</p>
+
+  <h2>Use of content</h2>
+  <p>All articles, text, graphics and the DevWiseAI name and logo are owned by DevWiseAI / MIGOTEK unless stated otherwise, and are protected by copyright. You may read, share links to and quote short excerpts from our articles with clear attribution and a link to the original. You may not republish full articles or substantial parts of them without written permission.</p>
+  <p>Code snippets in articles are provided for learning. Unless an article states otherwise, you may use them in your own projects, at your own risk.</p>
+
+  <h2>No professional advice</h2>
+  <p>Content on DevWiseAI is for general information and education. It is not legal, financial, security or other professional advice. Always test code and review configurations before using them in production systems.</p>
+
+  <h2>Accuracy</h2>
+  <p>We work to keep articles accurate and up to date, but software and AI tools change quickly. We make no warranties about the completeness, reliability or accuracy of the content, and features, prices or behavior of third-party products may differ from what an article describes.</p>
+
+  <h2>Third-party links and advertising</h2>
+  <p>The site may contain links to third-party websites and display third-party advertisements. We do not control and are not responsible for those websites, products or services. See our <a href="/disclaimer/">Disclaimer</a> and <a href="/privacy-policy/">Privacy Policy</a>.</p>
+
+  <h2>Acceptable use</h2>
+  <p>You agree not to misuse the site, including attempting to disrupt it, access it in unauthorized ways, scrape it at a volume that affects its availability, or use it for any unlawful purpose.</p>
+
+  <h2>Limitation of liability</h2>
+  <p>To the fullest extent permitted by law, DevWiseAI and its author are not liable for any direct, indirect or consequential loss or damage arising from your use of the site or reliance on its content, including the use of any code shown in articles.</p>
+
+  <h2>Changes</h2>
+  <p>We may update these terms at any time. Continued use of the site after changes means you accept the updated terms.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about these terms: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+</PageLayout>

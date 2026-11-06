@@ -1,0 +1,15 @@
+---
+interface Props { size?: number; withText?: boolean }
+const { size = 30, withText = true } = Astro.props;
+---
+<span class="logo" aria-label="DevWiseAI">
+  <svg class="logo-mark" width={size} height={size} viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+    <rect x="1" y="1" width="30" height="30" rx="9" class="lm-bg" />
+    <path d="M11.5 10.5 6.5 16l5 5.5" class="lm-stroke" />
+    <path d="M20.5 10.5l5 5.5-5 5.5" class="lm-stroke" />
+    <path d="M16 9.6c.5 3.2 1.6 4.4 3.8 5-2.2.6-3.3 1.8-3.8 5-.5-3.2-1.6-4.4-3.8-5 2.2-.6 3.3-1.8 3.8-5z" class="lm-spark" />
+  </svg>
+  {withText && (
+    <span class="logo-word"><span class="lw-dev">Dev</span><span class="lw-wise">Wise</span><span class="lw-ai">AI</span></span>
+  )}
+</span>

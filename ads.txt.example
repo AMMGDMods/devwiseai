@@ -1,0 +1,8 @@
+# ads.txt template for DevWiseAI
+# After Google AdSense approves the site:
+#   1. Copy this file to public/ads.txt
+#   2. Replace pub-XXXXXXXXXXXXXXXX with your real publisher ID
+#      (AdSense > Sites > ads.txt shows the exact line to use)
+#   3. Uncomment the line below and redeploy
+#
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

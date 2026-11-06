@@ -1,0 +1,26 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { CONTACT_EMAIL } from '../consts';
+---
+<PageLayout title="Disclaimer" eyebrow="Legal" updated="November 6, 2026" path="/disclaimer/" description="DevWiseAI's disclosures about advertising, affiliate links, opinions and the accuracy of content.">
+  <h2>General information</h2>
+  <p>The information on DevWiseAI is published in good faith for general information and educational purposes. While we aim for accuracy, we make no guarantees about its completeness or reliability. Any action you take based on information on this site is strictly at your own risk.</p>
+
+  <h2>Advertising disclosure</h2>
+  <p>DevWiseAI is, or may be, supported by display advertising, including ads served by Google AdSense. Ads are selected and served by the ad network; their presence does not mean we endorse the advertised products or services. Advertisers have no influence over our editorial content.</p>
+
+  <h2>Affiliate disclosure</h2>
+  <p>Some articles may contain affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no additional cost to you. Affiliate relationships never determine our opinions or recommendations, and any article that contains affiliate links will say so. At the time of writing, no article on this site contains affiliate links.</p>
+
+  <h2>Reviews and opinions</h2>
+  <p>Reviews and comparisons reflect the author’s own experience and judgment at the time of writing. Software products change frequently, so features, pricing and performance may be different by the time you read an article. Please check the vendor’s official information before making a decision.</p>
+
+  <h2>Code and technical content</h2>
+  <p>Code examples, commands and configurations are provided “as is”, without warranty of any kind. Review and test them in a safe environment before using them in production, and follow your organization’s security policies, especially when using AI tools with private code.</p>
+
+  <h2>Trademarks</h2>
+  <p>Product names, logos and brands mentioned on this site are the property of their respective owners. Their use is for identification only and does not imply endorsement.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this disclaimer: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+</PageLayout>

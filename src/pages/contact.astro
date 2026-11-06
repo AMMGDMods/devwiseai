@@ -1,0 +1,16 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { CONTACT_EMAIL } from '../consts';
+---
+<PageLayout title="Contact" eyebrow="Contact" path="/contact/" description="Contact DevWiseAI: questions, corrections, topic suggestions and business enquiries.">
+  <p>Thanks for reading DevWiseAI. The best way to reach us is by email:</p>
+  <p class="callout"><strong>Email:</strong> <a href={`mailto:${CONTACT_EMAIL}?subject=DevWiseAI%20enquiry`}>{CONTACT_EMAIL}</a></p>
+
+  <h2>What to write about</h2>
+  <ul>
+    <li><strong>Corrections:</strong> if you spot an error in an article, please include the article link and what should be fixed.</li>
+    <li><strong>Topic suggestions:</strong> tell us which AI tool, workflow or programming problem you would like covered.</li>
+    <li><strong>Business enquiries:</strong> partnership or advertising questions are welcome. Any sponsored content would always be clearly labeled.</li>
+  </ul>
+  <p>We read every message and aim to reply within a few business days. Please do not send passwords, API keys or other sensitive information by email.</p>
+</PageLayout>

@@ -1,0 +1,29 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { CONTACT_EMAIL } from '../consts';
+---
+<PageLayout title="About DevWiseAI" eyebrow="About" path="/about/" description="DevWiseAI is an independent blog by developer Amgd Al-Subaihi (MIGOTEK) about using AI tools well in real software development.">
+  <p><strong>DevWiseAI</strong> is an independent blog about using artificial intelligence well in everyday software development. The name is simple: <em>Dev</em> for developers, <em>Wise</em> for good judgment, and <em>AI</em> for the tools that are changing how we write code. The goal is to help developers get real value from AI without trading away the quality, security and understanding of their own code.</p>
+
+  <h2>What you will find here</h2>
+  <ul>
+    <li><strong>AI Tools</strong> — how to evaluate, set up and work with AI assistants in a developer workflow.</li>
+    <li><strong>Tutorials</strong> — practical, step-by-step programming guides.</li>
+    <li><strong>Reviews</strong> — criteria-driven looks at developer software and services.</li>
+    <li><strong>Dev Productivity</strong> — habits and workflows that help you ship better software.</li>
+  </ul>
+
+  <h2>Who writes it</h2>
+  <p>DevWiseAI is written by <strong>Amgd Al-Subaihi</strong>, a software developer and the founder of <strong>MIGOTEK</strong>, a small software brand. The articles come from hands-on development work: building, debugging and shipping software, and using AI tools as part of that process.</p>
+
+  <h2>How we write</h2>
+  <ul>
+    <li>Articles are original and written to be useful, not to fill space.</li>
+    <li>We avoid hype and unverified claims. When something is an opinion, we say so.</li>
+    <li>Product mentions are based on what a developer actually needs, not on who pays. If an article ever contains affiliate links or sponsored content, it will be clearly disclosed (see our <a href="/disclaimer/">Disclaimer</a>).</li>
+    <li>Articles are updated when tools or best practices change in ways that matter.</li>
+  </ul>
+
+  <h2>Get in touch</h2>
+  <p>Questions, corrections or topic suggestions are welcome. Email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> or visit the <a href="/contact/">contact page</a>.</p>
+</PageLayout>

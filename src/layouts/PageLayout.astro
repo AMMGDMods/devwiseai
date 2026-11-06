@@ -1,0 +1,17 @@
+---
+import BaseLayout from './BaseLayout.astro';
+interface Props { title: string; description: string; path: string; eyebrow?: string; updated?: string }
+const { title, description, path, eyebrow, updated } = Astro.props;
+---
+<BaseLayout title={title} description={description} path={path}>
+  <section class="page-head">
+    <div class="container">
+      {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+      <h1>{title}</h1>
+      {updated && <p class="meta" style="margin-top:4px">Last updated: {updated}</p>}
+    </div>
+  </section>
+  <section class="section" style="padding-top:12px">
+    <div class="container"><div class="prose"><slot /></div></div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,56 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { CONTACT_EMAIL, SITE_URL } from '../consts';
+---
+<PageLayout title="Privacy Policy" eyebrow="Legal" updated="November 6, 2026" path="/privacy-policy/" description="How DevWiseAI collects, uses and protects information, including cookies and Google advertising.">
+  <p>This Privacy Policy explains what information DevWiseAI (“we”, “us”, “our”), available at <a href={SITE_URL}>{SITE_URL.replace('https://', '')}</a>, collects when you visit the site, how it is used, and the choices you have. By using the site you agree to this policy.</p>
+
+  <h2>Information we collect</h2>
+  <h3>Information you give us</h3>
+  <p>If you email us, we receive your email address and whatever you choose to include in your message. We use it only to reply to you and do not sell or share it.</p>
+  <h3>Information collected automatically</h3>
+  <p>Like most websites, our hosting provider automatically records standard technical information when you load a page, such as your IP address, browser type, device type, referring page, pages visited and the date and time of the visit. This information is used to operate, secure and improve the site, and is not used to identify you personally.</p>
+
+  <h2>Cookies and web beacons</h2>
+  <p>Cookies are small text files stored on your device by your browser. DevWiseAI itself does not require cookies to read articles. We store your light/dark theme preference in your browser’s local storage; it never leaves your device.</p>
+  <p>Third parties that serve advertising or measure traffic on this site may place and read cookies, or use web beacons and similar technologies, as described below.</p>
+
+  <h2>Advertising and Google AdSense</h2>
+  <p>We use, or may use, Google AdSense to display advertisements. In connection with this:</p>
+  <ul>
+    <li>Third-party vendors, including Google, use cookies to serve ads based on a user’s prior visits to this website or other websites.</li>
+    <li>Google’s use of advertising cookies, including the DoubleClick (DART) cookie, enables it and its partners to serve ads to you based on your visit to this site and/or other sites on the Internet.</li>
+    <li>You may opt out of personalized advertising by visiting Google’s <a href="https://adssettings.google.com/" rel="noopener" target="_blank">Ads Settings</a>.</li>
+    <li>You can also opt out of a third-party vendor’s use of cookies for personalized advertising by visiting <a href="https://www.aboutads.info/choices/" rel="noopener" target="_blank">www.aboutads.info/choices</a> or, in the European Economic Area, <a href="https://www.youronlinechoices.eu/" rel="noopener" target="_blank">www.youronlinechoices.eu</a>.</li>
+    <li>Other third-party ad vendors or ad networks may also serve ads on this site. Their use of cookies is governed by their own privacy policies, not this one, and we have no access to or control over those cookies.</li>
+  </ul>
+  <p>To learn more about how Google uses information from sites that use its services, see <a href="https://policies.google.com/technologies/partner-sites" rel="noopener" target="_blank">How Google uses information from sites or apps that use our services</a>.</p>
+  <p>Where required by law (for example in the EEA, the UK and Switzerland), ads are only personalized after you give consent through a consent message shown on the site, and you can change your choice at any time.</p>
+
+  <h2>Managing cookies</h2>
+  <p>You can block or delete cookies through your browser settings. Blocking cookies will not prevent you from reading DevWiseAI, but ads you see may be less relevant to you.</p>
+
+  <h2>How we use information</h2>
+  <ul>
+    <li>To operate, maintain and secure the website.</li>
+    <li>To understand which content is useful so we can improve it.</li>
+    <li>To respond to your messages.</li>
+    <li>To display advertising that helps keep the content free.</li>
+  </ul>
+  <p>We do not sell your personal information.</p>
+
+  <h2>Your rights</h2>
+  <p>Depending on where you live, you may have the right to access, correct or delete personal information we hold about you, or to object to certain processing. Users in the EEA and UK have rights under the GDPR, and California residents have rights under the CCPA/CPRA, including the right to know and the right to opt out of the “sale” or “sharing” of personal information. To make a request, email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+
+  <h2>Children’s information</h2>
+  <p>DevWiseAI is not directed at children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided us with personal information, contact us and we will delete it.</p>
+
+  <h2>External links</h2>
+  <p>Articles may link to other websites. We are not responsible for the content or privacy practices of those sites.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy from time to time. The “Last updated” date at the top shows when it was last changed.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+</PageLayout>
