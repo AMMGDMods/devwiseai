@@ -13,7 +13,7 @@ export const SITE_DESCRIPTION =
   'Practical guides on AI tools for developers, programming tutorials and honest software reviews. Learn to use AI to write better code, not more code.';
 
 export const AUTHOR = {
-  name: 'Amgd Al-Subaihi',
+  name: 'MIGOTEK Team',
   url: '/about/',
 };
 

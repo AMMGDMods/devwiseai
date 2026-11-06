@@ -4,7 +4,7 @@ description: "AI assistants make it easy to produce more code faster. Here is a 
 pubDate: 2026-11-06T08:00:00Z
 category: dev-productivity
 tags: ["AI coding assistants", "code quality", "code review", "best practices"]
-author: "Amgd Al-Subaihi"
+author: "MIGOTEK Team"
 ---
 
 AI coding assistants are very good at one thing: producing plausible code quickly. That is also exactly what makes them risky. Plausible is not the same as correct, and fast is not the same as maintainable. A developer who accepts every suggestion can ship more lines in a week than ever before and still end up with a codebase that is harder to change, harder to debug and easier to break.

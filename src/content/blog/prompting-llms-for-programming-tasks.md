@@ -4,7 +4,7 @@ description: "Learn a repeatable way to prompt large language models for coding,
 pubDate: 2026-11-06T09:00:00Z
 category: tutorials
 tags: ["prompting", "LLMs", "debugging", "refactoring", "AI coding assistants"]
-author: "Amgd Al-Subaihi"
+author: "MIGOTEK Team"
 ---
 
 Large language models (LLMs) can write, explain and fix code, but the quality of what you get back depends heavily on what you put in. A vague request like "fix my code" usually produces a vague answer. A clear request with the right context often produces something you can use almost immediately.

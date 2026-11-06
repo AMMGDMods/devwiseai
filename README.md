@@ -22,7 +22,7 @@ description: "One or two sentences, under 170 characters (used as the meta descr
 pubDate: 2026-11-06
 category: ai-tools        # ai-tools | tutorials | reviews | dev-productivity
 tags: ["tag one", "tag two"]
-author: "Amgd Al-Subaihi"
+author: "MIGOTEK Team"
 draft: false
 ---
 ```

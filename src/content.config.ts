@@ -10,7 +10,7 @@ const blog = defineCollection({
     updatedDate: z.coerce.date().optional(),
     category: z.enum(['ai-tools', 'tutorials', 'reviews', 'dev-productivity']),
     tags: z.array(z.string()).default([]),
-    author: z.string().default('Amgd Al-Subaihi'),
+    author: z.string().default('MIGOTEK Team'),
     draft: z.boolean().default(false),
   }),
 });
